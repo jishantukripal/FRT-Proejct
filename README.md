@@ -14,7 +14,7 @@ It has a home page, event page & an hall of fame page for the star students. Als
 
 Primary Azure Technology: 1. Cloud Services & 2. Azure Static Web Apps
 
-Hosted Url: 
+Hosted Url: https://agreeable-stone-07c2e0d10.1.azurestaticapps.net
 
 Screenshots: 
 
