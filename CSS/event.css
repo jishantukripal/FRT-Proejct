@@ -1,0 +1,104 @@
+/* ----------------- CSS FOR ACHIEVEMENTS SECTION ------------- */
+.about__achievements{
+    margin-top: 3rem;
+    height: 100vh;
+}
+
+.about__achievements-container{
+    display:grid;
+    grid-template-columns: 40% 60%;
+}
+
+.about__achievements-right > p{
+    margin: 1.6rem 0 2.5rem;
+}
+
+.achievements__cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.achievements_card{
+    margin-top: 2rem;
+    background: var(--color-bg1);
+    padding: 1.6rem;
+    border-radius: 1rem;
+    text-align: columns;
+    transition: var(--transition);
+}
+
+.achievements_card:hover{
+    background: var(--color-bg2);
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+.achievements__icon{
+    background: var(--color-danger);
+    padding: 0.6rem;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.achievements_card:nth-child(2) .achievements__icon{
+    background: var(--color-success);
+}
+
+.achievements_card:nth-child(3) .achievements__icon{
+    background: var(--color-primary);
+}
+
+.achievements__card p{
+    margin: 1rem;
+}
+
+/* ----------------- MEDIA QUERIES FOR TABLET ---------------------------- */
+@media screen and (max-width:1024px){   
+    .about__achievements{
+        margin-bottom: 0;
+        height: 50vh;
+    }
+
+    .achievements__cards{
+        gap: 1rem;
+    }
+   
+    .events{
+        margin-top: 0rem;
+    }
+
+    .events__container{
+        grid-template-columns: 1fr;
+        gap: 5rem;
+    }
+} 
+
+/* ----------------------- MEDIA QUERIES FOR MOBILE  ----------------------------- */
+@media screen and (max-width:600px){
+    .about__achievements-container{
+        margin-top: 0px;
+        height: auto;
+        width: auto;
+        margin-left: 4rem;
+
+    }
+
+    .achievements__cards{
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .about__achievements-left{
+        display: none;
+    }
+     
+    .events{
+        margin-top: 30rem;
+    }
+
+    .events__container{
+        grid-template-columns: 1fr;
+    }
+}
